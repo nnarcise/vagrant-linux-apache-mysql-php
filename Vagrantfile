@@ -48,9 +48,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      chef.cookbooks_path = ["site-cookbooks", "cookbooks"]
      chef.add_role "vagrant-test-box"
      chef.data_bags_path = "data_bags"
-     #chef.add_recipe "mysql"
-     #chef.add_role "web"
-     #chef.add_role "webserver"
   #
   #   # You may also specify custom JSON attributes:
   #   chef.json = { mysql_password: "foo" }
