@@ -131,7 +131,7 @@ $mysqli->close();
 
 				<tr>
 					<td>Password</td>
-					<td>root</td>
+					<td>passw0rd</td>
 				</tr>
 
 				<tr>

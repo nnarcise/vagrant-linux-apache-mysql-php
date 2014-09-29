@@ -7,7 +7,7 @@ include_recipe "apache2"
 web_app "example" do
 	server_name "www.example.vm"
 	server_aliases ["example.vm"]
-	directory_index ["index.html","test.php", "index.php"]
+	directory_index ["index.php"]
 	allow_override "all"
 	docroot "/srv/site/"
 end

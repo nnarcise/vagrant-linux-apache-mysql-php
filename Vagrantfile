@@ -14,9 +14,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
   config.omnibus.chef_version = :latest
 
-  #config.vm.provider :virtualbox do |vb|
-  #  vb.customize ["modifyvm", :id, "--name", Vagrant "Lamp Stack", "--memory", 512"]
-  #end
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--name", "Vagrant Lamp Stack", "--memory", "512"]
+  end
 
 
   # Create a private network, which allows host-only access to the machine
